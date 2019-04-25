@@ -3,7 +3,7 @@
 using std::cin;
 using std::cout;
 
-int b_m_m(int a, int b) {
+int gcd(int a, int b) {
 	for(;;) {
 		if(a == 0) {
 			return b;
@@ -16,8 +16,8 @@ int b_m_m(int a, int b) {
 	}
 }
 
-int k_m_m(int a, int b) {
-	int n = b_m_m(a, b);
+int lcm(int a, int b) {
+	int n = gcd(a, b);
 	if(n != 0) {
 		return a / n * b;
 	}
@@ -28,6 +28,6 @@ int main() {
 	int a, b;
 	cin >> a;
 	cin >> b;
-	cout << "K.M.M : " << k_m_m(a, b) << "\n";
+	cout << "LCM : " << lcm(a, b) << "\n";
 	return 0;
 }
