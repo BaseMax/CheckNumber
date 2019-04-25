@@ -43,6 +43,7 @@ int main() {
 	int a, b;
 	cin >> a;
 	cin >> b;
+	cout << "GCD : " << gcd(a, b) << "\n";
 	cout << "LCM : " << lcm(a, b) << "\n";
 	return 0;
 }
