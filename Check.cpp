@@ -39,11 +39,25 @@ int lcm(int a, int b) {
 	return 0;
 }
 
+int lcm2(int a, int b, int gc) {
+	int n = gc;
+	if(n != 0) {
+		return a / n * b;
+	}
+	return 0;
+}
+
 int main() {
 	int a, b;
+	/////////////////////////////////
 	cin >> a;
 	cin >> b;
-	cout << "GCD : " << gcd(a, b) << "\n";
-	cout << "LCM : " << lcm(a, b) << "\n";
+	/////////////////////////////////
+	int _gsd=gcd(a, b);
+	int _lcm=lcm2(a, b, _gsd);
+	/////////////////////////////////
+	cout << "GCD : " << _gsd << "\n";
+	cout << "LCM : " << _lcm << "\n";
+	/////////////////////////////////
 	return 0;
 }
