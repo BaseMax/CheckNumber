@@ -47,6 +47,19 @@ int lcm2(int a, int b, int gc) {
 	return 0;
 }
 
+int lcm3(int a, int b) {
+	int max = (a > b) ? a : b;
+	// It require to improve the loop...
+	while(1) {
+		if((max % a == 0) && (max % b == 0)) {
+			return max;
+			break;
+		}
+		++max;
+	}
+	return 0;
+}
+
 int main() {
 	int a, b;
 	/////////////////////////////////
