@@ -67,6 +67,7 @@ bool isPerfect(int value) {
 			sum+=y;
 			// Improve...
 			if(sum > value) {
+				// break;
 				return false;
 			}
 		}
