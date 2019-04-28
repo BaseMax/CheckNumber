@@ -60,6 +60,19 @@ int lcm3(int a, int b) {
 	return 0;
 }
 
+bool isPerfect(int value) {
+	int sum=0;
+	for(int index=1; index < value; index++) {
+		if(value % index ==0) {
+			sum+=y;
+		}
+	}
+	if(value == sum) {
+		return true;
+	}
+	return false;
+}
+
 int main() {
 	int a, b;
 	/////////////////////////////////
