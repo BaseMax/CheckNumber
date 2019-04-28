@@ -65,6 +65,10 @@ bool isPerfect(int value) {
 	for(int index=1; index < value; index++) {
 		if(value % index ==0) {
 			sum+=y;
+			// Improve...
+			if(sum > value) {
+				return false;
+			}
 		}
 	}
 	if(value == sum) {
