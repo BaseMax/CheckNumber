@@ -3,6 +3,23 @@
 using std::cin;
 using std::cout;
 
+float maximum(float a, float b) {
+	return a > b ? a : b;
+}
+
+float biggestValue() {
+	float result;
+	float number1;
+	float number2;
+	float number3;
+	cin >> number1;
+	cin >> number2;
+	cin >> number3;
+	result=maximum(number1, number2);
+	result=maximum(result, number3);
+	return result;
+}
+
 // Recursion
 int gcd(int a, int b) {
 	if(a == 0 || b == 0) {
@@ -101,6 +118,9 @@ int main() {
 	/////////////////////////////////
 	cout << "GCD : " << _gsd << "\n";
 	cout << "LCM : " << _lcm << "\n";
+	/////////////////////////////////
+	float number=biggestValue();
+	cout << number << "\n";
 	/////////////////////////////////
 	return 0;
 }
