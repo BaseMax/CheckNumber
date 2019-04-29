@@ -8,6 +8,7 @@ float maximum(float a, float b) {
 }
 
 float biggestValue() {
+	// We can improve it...
 	float result;
 	float number1;
 	float number2;
