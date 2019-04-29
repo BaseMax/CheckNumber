@@ -31,6 +31,18 @@ int gcd2(int a, int b) {
 	}
 }
 
+// Recursion
+int gcd3(int n, int m) {
+	// It's correct?
+	if(n == 0)
+		return m;
+	if(m == 0)
+		return n;
+	int max=n>m ? n : m;
+	int min=n>m ? m : n;
+	return gcd3(max-min, min);
+}
+
 int lcm(int a, int b) {
 	int n = gcd(a, b);
 	if(n != 0) {
