@@ -7,6 +7,35 @@ float maximum(float a, float b) {
 	return a > b ? a : b;
 }
 
+void draw_n(int n) {
+	for(int r=1;r<=n;r++) {
+		for(int c=1;c<=n;c++) {
+			if(r==1 || r==n || c==1 || c==n) {
+				cout<< "*" ;
+			}
+			else {
+				cout<< " ";
+			}
+		}
+		cout << "\n";
+	}
+}
+
+void draw_n_m(int n, int m) {
+	for(int r=1;r<=n;r++) {
+		for(int c=1;c<=m;c++) {
+			// No problem?
+			if(r==1 || r==n || c==1 || c==m) {
+				cout<< "*" ;
+			}
+			else {
+				cout<< " ";
+			}
+		}
+		cout << "\n";
+	}
+}
+
 float biggestValue() {
 	// We can improve it...
 	float result;
