@@ -7,6 +7,19 @@ float maximum(float a, float b) {
 	return a > b ? a : b;
 }
 
+void repeat(char ch, int repeat) {
+	for(int index=0; index< repeat; index++) {
+		cout << ch;
+	}
+}
+
+void draw_s(int s) {
+	for(int i=0; i<s;i++) {
+		repeat('*', i*2+1);
+		cout << "\n";
+	}
+}
+
 void draw_n(int n) {
 	for(int r=1;r<=n;r++) {
 		for(int c=1;c<=n;c++) {
