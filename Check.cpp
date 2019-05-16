@@ -49,6 +49,21 @@ void draw_n_m(int n, int m) {
 	}
 }
 
+int checks(int number) {
+    int index=1,x=0,y=1,z=1;
+    int result=1;
+    do {
+        result=z;
+        cout << z << "\t";
+        z=x+y;
+        x=y;
+        y=z;
+        index++;
+    } while(index<=number);
+    // cout << "\n==> " << result;
+    return result;
+}
+
 float biggestValue() {
 	// We can improve it...
 	float result;
