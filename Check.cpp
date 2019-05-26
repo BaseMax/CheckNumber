@@ -13,11 +13,11 @@ void repeat(char ch, int repeat) {
 	}
 }
 
-int fibonacci(n) {
-	if(n <= 1)
+int fibonacci(number) {
+	if(number <= 1)
 		return 1;
 	else
-		return fibonacci(n-1) + fibonacci(n-2);
+		return fibonacci(number-1) + fibonacci(number-2);
 }
 
 void draw_s(int s) {
