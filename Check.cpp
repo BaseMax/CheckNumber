@@ -13,6 +13,13 @@ void repeat(char ch, int repeat) {
 	}
 }
 
+int fibonacci(n) {
+	if(n <= 1)
+		return 1;
+	else
+		return fibonacci(n-1) + fibonacci(n-2);
+}
+
 void draw_s(int s) {
 	for(int i=0; i<s;i++) {
 		repeat('*', i*2+1);
@@ -180,6 +187,8 @@ int main() {
 	/////////////////////////////////
 	float number=biggestValue();
 	cout << number << "\n";
+	/////////////////////////////////
+	cout << "fibonacci(30) = " << fibonacci(30) << "\n";
 	/////////////////////////////////
 	return 0;
 }
