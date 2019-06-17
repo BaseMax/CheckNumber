@@ -7,6 +7,22 @@ float maximum(float a, float b) {
 	return a > b ? a : b;
 }
 
+void fibUntil(int n) {
+	int z;
+	int g=1;
+	int x=1;
+	int k;
+	cout << x << " " << g << " " ;
+	z = x + g;
+	cout << z << " " ;
+	for (k = 1 ; k <= n -1 ; k++ ) {
+		x = g ;
+		g = z ;
+		z = x + g ;
+		cout << z << " " ;
+	}
+}
+
 void repeat(char ch, int repeat) {
 	for(int index=0; index< repeat; index++) {
 		cout << ch;
@@ -189,6 +205,12 @@ int main() {
 	cout << number << "\n";
 	/////////////////////////////////
 	cout << "fibonacci(30) = " << fibonacci(30) << "\n";
+	/////////////////////////////////
+	int n;
+	cout << "How many number for fibonachi?\n";
+	cin >> n;
+	// n -= 2;
+	fibUntil(n-2);
 	/////////////////////////////////
 	return 0;
 }
