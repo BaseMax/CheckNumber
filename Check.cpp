@@ -29,7 +29,7 @@ void repeat(char ch, int repeat) {
 	}
 }
 
-int fibonacci(number) {
+int fibonacci(int number) {
 	if(number <= 1)
 		return 1;
 	else
@@ -174,7 +174,7 @@ bool isPerfect(int value) {
 	int sum=0;
 	for(int index=1; index < value; index++) {
 		if(value % index ==0) {
-			sum+=y;
+			sum+=index;
 			// Improve...
 			if(sum > value) {
 				// break;
