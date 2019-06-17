@@ -3,7 +3,7 @@
 * @Name : CheckNumber/check.cpp
 * @Version : 1.0
 * @Programmer : Max
-* @Date : 2019-05 - 2019-07
+* @Date : 2019-03 - 2019-07
 * @Released under : https://github.com/BaseMax/CheckNumber/blob/master/LICENSE
 * @Repository : https://github.com/BaseMax/CheckNumber
 *
