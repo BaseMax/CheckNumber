@@ -198,6 +198,23 @@ bool isPerfect(int value) {
 	return false;
 }
 
+int min(int a, int b)  { 
+	return b ^ ((a ^ b) & -(a < b));
+} 
+
+int max(int a, int b)  { 
+	return a ^ ((a ^ b) & -(a < b));
+}
+
+// MIN <= (a - b) <= MAX
+int min2(int a, int b) {  
+	return ((a - b) & ((a - b) >> (sizeof(int) * 8 - 1))) + b;
+}
+
+int max2(int a, int b) {  
+	return a - ((a - b) & ((a - b) >> (sizeof(int) * 8 - 1)));
+}
+
 int main() {
 	/////////////////////////////////
 	int a, b;
